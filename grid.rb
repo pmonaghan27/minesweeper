@@ -133,16 +133,17 @@ class Grid
         end
     end
 
-    def cheat
-        print_key = { -1 => "*", 0 => "/" }
-        puts "   #{(0..8).to_a.join("  ")}"
-        @grid.each_with_index do |row, row_idx|
-            print "#{row_idx} "
-            row.each do |tile|
-                print_val = print_key[tile.val] || tile.val
-                print " #{print_val} "
-            end
-            puts
-        end
-    end
+    #use for testing:
+    # def cheat
+    #     print_key = { -1 => "*", 0 => "/" }
+    #     puts "   #{(0..8).to_a.join("  ")}"
+    #     @grid.each_with_index do |row, row_idx|
+    #         print "#{row_idx} "
+    #         row.each do |tile|
+    #             print_val = print_key[tile.val] || tile.val
+    #             print " #{print_val} "
+    #         end
+    #         puts
+    #     end
+    # end
 end

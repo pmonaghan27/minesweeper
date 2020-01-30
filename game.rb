@@ -46,7 +46,7 @@ class Minesweeper
 
     def play_turn
         @grid.render
-        @grid.cheat
+        # @grid.cheat (use for testing)
 
         command = nil
         until command
@@ -57,8 +57,6 @@ class Minesweeper
             rescue
                 puts "Unrecognized command or invalid coordinates. Try again."
                 puts ""
-
-                command = nil
             end
         end
 
